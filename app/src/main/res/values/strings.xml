@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title_todo">TODO</string>
+    <string name="title_shopping">Shopping</string>
+    <string name="title_admin">Admin</string>
+    <string name="title_preferences">Settings</string>
+</resources>
