@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/id_navigation"
+            app:startDestination="@id/id_main_fragment">
+
+    <!-- MainFragment navigation. -->
+    <fragment
+            android:id="@+id/id_main_fragment"
+            android:name="com.mcssoft.myapp.ui.fragment.MainFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/mainFragment_to_todoFragment"
+                app:destination="@id/id_todo_fragment" />
+        <action
+                android:id="@+id/mainFragment_to_shoppingFragment"
+                app:destination="@id/id_shopping_fragment" />
+        <action
+                android:id="@+id/mainFragment_to_adminFragment"
+                app:destination="@id/id_admin_fragment" />
+        <action
+                android:id="@+id/mainFragment_to_settingsFragment"
+                app:destination="@id/id_settings_fragment" />
+    </fragment>
+
+    <!-- ToDoFragment navigation. -->
+    <fragment android:id="@+id/id_todo_fragment"
+              android:name="com.mcssoft.myapp.ui.fragment.ToDoFragment"
+              android:label="ToDoFragment"
+              tools:layout="@layout/fragment_todo">
+        <action
+                android:id="@+id/todoFragment_to_mainFragment"
+                app:destination="@id/id_main_fragment" />
+    </fragment>
+
+</navigation>

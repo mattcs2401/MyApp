@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">MyApp</string>
+
+    <!-- Bottom menu titles. -->
     <string name="title_todo">TODO</string>
     <string name="title_shopping">Shopping</string>
     <string name="title_admin">Admin</string>
     <string name="title_preferences">Settings</string>
+
+    <!-- Labels. -->
+    <string name="label_fragment_main">Please select an activity from the bottom menu.</string>
 </resources>
