@@ -9,32 +9,9 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import com.mcssoft.myapp.R
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_base.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
-
-//    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-//        when (item.itemId) {
-//            R.id.navigation_todo -> {
-//                id_tv_main_message.setText(R.string.title_todo)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//            R.id.navigation_shopping -> {
-//                id_tv_main_message.setText(R.string.title_shopping)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//            R.id.navigation_admin -> {
-//                id_tv_main_message.setText(R.string.title_admin)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//            R.id.navigation_preferences -> {
-//                id_tv_main_message.setText(R.string.title_preferences)
-//                return@OnNavigationItemSelectedListener true
-//            }
-//        }
-//        false
-//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,10 +30,19 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.id_navigation_todo -> {
                 navController.navigate(R.id.id_todo_fragment)
             }
-//            R.id.id_add -> {
-////                val bundle = Bundle()
-////                bundle.putInt(getString(R.string.key_edit_type), Constants.EDIT_RACE_NEW)
-//                navController.navigate(R.id.id_edit_fragment, bundle)
+            R.id.id_navigation_shopping -> {
+                navController.navigate(R.id.id_shopping_fragment)
+            }
+            R.id.id_navigation_admin -> {
+                navController.navigate(R.id.id_admin_fragment)
+            }
+            R.id.id_navigation_settings -> {
+                navController.navigate(R.id.id_settings_fragment)
+            }
+//            R.id.example_with_bundle -> {
+//                val bundle = Bundle()
+//                bundle.putInt(getString(R.string.key), Constants.SOME_CONSTANT)
+//                navController.navigate(R.id.id_some_fragment, bundle)
 //            }
         }
         return false
