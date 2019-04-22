@@ -33,6 +33,8 @@
         <action
                 android:id="@+id/todoFragment_to_mainFragment"
                 app:destination="@id/id_main_fragment" />
+        <action android:id="@+id/todoFragment_to_todoEditFragment"
+                app:destination="@id/id_todo_edit_fragment"/>
     </fragment>
 
     <!-- ShoppingFragment navigation. -->
@@ -63,6 +65,14 @@
         <action
                 android:id="@+id/SettingsFragment_to_mainFragment"
                 app:destination="@id/id_main_fragment" />
+    </fragment>
+
+    <!-- To Do Edit fragment. -->
+    <fragment android:id="@+id/id_todo_edit_fragment"
+              android:name="com.mcssoft.myapp.ui.fragment.ToDoEditFragment"
+              android:label="ToDoEditFragment">
+        <action android:id="@+id/todoEditFragment_to_todoFragment"
+                app:destination="@id/id_todo_fragment"/>
     </fragment>
 
 </navigation>
